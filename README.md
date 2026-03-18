@@ -21,7 +21,7 @@ The system processes:
 📄 Final Output
 
 👉 The generated DDR report is available here:
-"outputs/final_ddr_report.html"
+🔗 https://rimpadas11.github.io/AI-Property-DDR-Analyzer/
 
 🧠 Approach
 
