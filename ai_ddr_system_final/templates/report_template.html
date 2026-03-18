@@ -1,0 +1,43 @@
+<html>
+<head><title>DDR Report</title></head>
+<body>
+<h1>Detailed Diagnostic Report</h1>
+<h2>1. Property Issue Summary</h2>
+<ul>
+{% for item in summary %}
+<li>{{ item.text }}</li>
+{% endfor %}
+</ul>
+
+<h2>2. Area-wise Observations</h2>
+{% for obs in observations %}
+<p><b>Type:</b> {{ obs.type }}</p>
+<p>{{ obs.text }}</p>
+{% for img in images %}
+{% if img.page == obs.page %}
+<img src="{{ img.path }}" width="300"/>
+{% endif %}
+{% endfor %}
+<hr>
+{% endfor %}
+
+<h2>3. Probable Root Cause</h2>
+<p>Likely due to plumbing leakage and external wall cracks.</p>
+
+<h2>4. Severity Assessment</h2>
+<p>Moderate to Severe.</p>
+
+<h2>5. Recommended Actions</h2>
+<ul>
+<li>Repair plumbing leakage</li>
+<li>Seal tile joints</li>
+<li>Apply waterproofing</li>
+</ul>
+
+<h2>6. Additional Notes</h2>
+<p>Thermal images confirm moisture presence.</p>
+
+<h2>7. Missing Information</h2>
+<p>Not Available</p>
+</body>
+</html>

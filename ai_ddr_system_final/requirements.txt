@@ -1,0 +1,6 @@
+PyMuPDF
+pdfplumber
+Pillow
+jinja2
+spacy
+numpy
